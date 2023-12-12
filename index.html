@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ecommerce website samiya</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		const header = document.querySelector("header");
+
+		window.addEventListener("scroll", function () {
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		let menu = document.querySelector('#menu-icon');
+		let navlist = document.querySelector('.navlist');
+
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navlist.classList.toggle('open');
+		};
+
+		window.onscroll = () => {
+			menu.classList.remove('bx-x');
+			navlist.classList.remove('open');
+		};
+
+		const sr = ScrollReveal({
+			distance: '30px',
+			duration: 2600,
+			reset: true
+		})
+
+		sr.reveal('.home-text', { delay: 280, origin: 'bottom' })
+
+		sr.reveal('.featured,.cta,.new,.brand,.contact', { delay: 200, origin: 'bottom' })
+	</script>
+
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Samiya</a>
+
+		<ul class="navlist">
+			<li><a href="file:///C:/Users/hitech/Documents/samiya.html">Login</a></li>
+			<li><a href="#featured">Featured</a></li>
+			<li><a href="#new">New</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+		<div class="header-icons">
+			<a href="#"><i class='bx bx-shopping-bag'></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<!----home--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h1>Laptops<br><span>Of Top Brands</span></h1>
+			<p>UPTO RS.3000 OFF, GET YOURS TODAY!</p>
+			<a href="#" class="btn">View Collection</a>
+		</div>
+	</section>
+
+	<!----featured--->
+	<section class="featured" id="featured">
+		<div class="center-text">
+			<h2>Featured Categories</h2>
+		</div>
+
+		<div class="featured-content">
+			<div class="row">
+				<img
+					src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQnMka1mdbOMvFeJWz2_WGzKZDpTrn5DGlnKXhESDrdzd51ln6M3-Uz_5Gv_upTBDPOJomAKjot7wRzT9t-PKJjKd8CtFfWQRd2w4VXVbxMoPWO9AoSQx6u&usqp=CAY">
+				<div class="fea-text1">
+					<h5>HP 15s Laptop</h5>
+					<p>₹38,306.00</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVeaG2PQEFduwD0Jppmu43GdfVNQrccznhA&usqp=CAU">
+				<div class="fea-text1">
+					<h5>Lenovo IdeaPad 3</h5>
+					<p>₹36,990.00 INR*</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tqc-5sP6y0pCAtAgJbxXlZQ8KRAWbBL-Gg&usqp=CAU">
+				<div class="fea-text1">
+					<h5>Hp 15s Laptop</h5>
+					<p>₹33,999.00</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRdLsqquUo6e8VnAG08TW2g6nSGROFU9Le97KrM1fpV1gDNkvqxMbas4OOgj5KPi4Nn2lDZTw6HWpvp1WVNuaiCEPWcoLiy1_bwZ5Frd4w&usqp=CAc">
+				<div class="fea-text">
+					<h5>Infinix Inbook X1 Laptop</h5>
+					<p>₹33,490.00</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQFJ5wkBwU1NvuP2IXMnb3R8bL2An3XZeEG9Iho3SWTKcnU2G3qneKFUZFxJulNPcy9HeZxTevChQWtY8C4FEPOxqGXjmVVbS4VmNNlSSDzrd-oZwPgfN9jsA&usqp=CAE">
+				<div class="fea-text">
+					<h5>Lenovo Ideapad </h5>
+					<p>₹55,990.00</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img
+					src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRJdah0Gv3pPaom3QCmT6Q3sZIfBy8TOL01Wq29FlQWE-OuykiIJfNKDxdxTz-vbMi9F42QGMsh_eG4rKCTr3tKMTb6JRcpn1w5agj6bEFZd4VLC_tdVmwKeg&usqp=CAY">
+				<div class="fea-text">
+					<h5>HP 15 Laptop</h5>
+					<p>₹58,244.00</p>
+				</div>
+				<div class="arrow">
+					<a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!----cta--->
+	<section class="cta">
+		<div class="cta-text">
+			<h6>DIWALI SALE</h6>
+			<h4>20% OFF <br>ON LATEST MODEL</h4>
+			<a href="#" class="btn">Shop Now</a>
+		</div>
+	</section>
+
+	<!----new--->
+	<section class="new" id="new">
+		<div class="center-text">
+			<h2>New Arrivals</h2>
+		</div>
+
+		<div class="new-content">
+			<div class="box">
+				<img
+					src="https://media.hicart.com/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/1/a/1a1m0uar-505723.jpg">
+				<h5>OPEN BOX HP</h5>
+				<h6>UPTO 2000 INR* OFF</h6>
+				<div class="sale">
+					<h4>Sale</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<img
+					src="https://media.hicart.com/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/1/9/194q2uwr.jpg">
+				<h5>Lorem Ipsum dizgi</h5>
+				<h6>$188</h6>
+				<div class="sale">
+					<h4>Sale</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://media.hicart.com/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/6/f/6fl17u8r-661506.jpg"
+					126+783>
+				<h5>Lorem Ipsum dizgi</h5>
+				<h6>$188</h6>
+				<div class="sale">
+					<h4>Sale</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://www.tun.com/coupons/HP%20Discounts%20104130%201805.png" 126+783>
+				<h5>Lorem Ipsum dizgi</h5>
+				<h6>$188</h6>
+				<div class="sale">
+					<h4>Sale</h4>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!----brand--->
+	<section class="brand">
+		<div class="brand-content">
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImage/B9RSS22083106YNA968.jpg">
+			</div>
+
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImageOriginal/B9RSS2203010M0ENWE7.jpg">
+			</div>
+
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImageOriginal/B9RSS2207210ELRCMF6.jpg">
+			</div>
+
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImageOriginal/B9RSS2207210EKJBC7F.jpg">
+			</div>
+
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImageOriginal/B9RSS2207210EZ3UT1E.jpg">
+			</div>
+
+			<div class="main">
+				<img src="https://c1.neweggimages.com/ProductImageCompressAll1280/B9RSS2203010M0RJ89E.jpg">
+			</div>
+
+		</div>
+	</section>
+
+	<!----contact--->
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<h3>Classix</h3>
+			<h5>Let's Connect With Us</h5>
+			<div class="icons">
+				<a href="#"><i class='bx bxl-facebook-square'></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt'></i></a>
+				<a href="#"><i class='bx bxl-twitter'></i></a>
+			</div>
+		</div>
+
+		<div class="main-contact">
+			<h3>Explore</h3>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#featured">Featured</a></li>
+			<li><a href="#new">New</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</div>
+
+		<div class="main-contact">
+			<h3>Our Services</h3>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Free Shipping</a></li>
+			<li><a href="#">Gift Cards</a></li>
+		</div>
+
+		<div class="main-contact">
+			<h3>Shopping</h3>
+			<li><a href="#">Top Companies </a></li>
+			<li><a href="#">Trending Laptops</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Sale</a></li>
+		</div>
+
+	</section>
+
+	<div class="last-text">
+		<p>created by SAMIYA SIKANDER SAYYAD and AIMAN UBEDULLAH SHAIKH</p>
+	</div>
+
+
+</body>
+
+</html>
+</body>
+
+</html>
